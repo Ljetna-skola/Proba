@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  background-color: #fdfdfd;
+}
+
+p {
+  text-align: justify;
+}
+
+header {
+  min-height: 190px;
+  border-bottom: 5px solid #ffe400;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:link,
+header a:visited {
+  color: #000000;
+}
+
+main a:hover,
+header a:hover {
+  font-weight: bold;
+}
+
+header a:active {
+  color: #ffe400;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#logo-heading {
+  float: left;
+}
+
+#logo {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  padding-top: 10px;
+}
+
+header h1 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 80px 0 0;
+  padding-left: 50px;
+  font-size: 40px;
+  line-height: 1.1em;
+}
+
+header nav {
+  float: right;
+  margin-top: 95px;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li:not(:first-child) {
+  margin-left: 50px;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 38px;
+  margin-top: 80px;
+}
+
+main h2 {
+  text-decoration: underline;
+}
+
+#pocetna h1 {
+  margin-bottom: 100px;
+}
+
+#pocetna section {
+  margin-bottom: 150px;
+}
+
+#pocetna section p {
+  width: 50%;
+}
+
+#pocetna section img {
+  float: right;
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+}
+
+#pocetna section:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+#uvod-u-programiranje-gumb:hover,
+#uvod-u-izradu-web-stranica-gumb:hover,
+#osnove-racunalne-obrade-fotografije-gumb:hover,
+#caraonica-gumb:hover,
+#sportiva-pozitiva-gumb:hover {
+  cursor: pointer;
+}
+
+#o-nama h1 {
+  margin-bottom: 30px;
+}
+
+#o-nama .container > p {
+  margin-bottom: 75px;
+}
+
+#o-nama .container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#o-nama section {
+  width: 15%;
+  display: inline-block;
+}
+
+#o-nama section:not(:last-child) {
+  padding-right: 70px;
+}
+
+.row {
+  margin-bottom: 50px;
+}
+
+form {
+  margin: 100px auto;
+  width: 350px;
+}
+
+label,
+input,
+select,
+button,
+textarea {
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  display: block;
+  box-sizing: border-box;
+  width: 350px;
+  background-color: #fdfdfd;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  padding-left: 5px;
+}
+
+input {
+  padding: 5px 5px 2px;
+  border: none;
+  border-bottom: 2px solid #ffe400;
+}
+
+select,
+textarea {
+  border: 2px solid #ffe400;
+  border-radius: 10px;
+  padding: 8px;
+  resize: none;
+}
+
+button {
+  background-color: #ffe400;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+button:hover {
+  background-color: #ffcf00;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  height: 100px;
+  border-top: 5px solid #ffe400;
+  padding-top: 10px;
+}
+
+#autorska-prava {
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (max-width: 1740px) {
+  header .container {
+    text-align: center;
+  }
+  header nav,
+  header #logo-heading {
+    float: none;
+    clear: both;
+    display: block;
+  }
+  header nav {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1095px) {
+  header nav {
+    margin-top: 40px;
+  }
+  header h1 {
+    margin-top: 30px;
+    padding-left: 0;
+  }
+  header h1,
+  header img {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  header nav ul li:not(:first-child) {
+    margin-left: 0;
+  }
+  header nav ul li {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  form,
+  label,
+  input,
+  select,
+  button,
+  textarea {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  #pocetna section img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1320px) {
+  #o-nama #predavaci {
+    margin-bottom: 50px;
+  }
+  #o-nama section {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1400px) {
+  #pocetna .container {
+    text-align: center;
+  }
+  #pocetna section img {
+    float: none;
+    clear: both;
+    display: block;
+    margin: 0 auto 30px;
+  }
+  #pocetna section h2 {
+    margin-bottom: 30px;
+  }
+  #pocetna section p {
+    width: 100%;
+  }
+  #pocetna section {
+    margin-bottom: 90px;
+  }
+}
